@@ -1,0 +1,29 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "loose": false,
+        "modules": false,
+        "targets": {
+          "browsers": ["last 2 versions", "safari 7"]
+        }
+      }
+    ],
+    "@babel/preset-typescript",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    ["@babel/proposal-decorators", { "legacy": true }],
+    "@babel/proposal-optional-chaining",
+    ["@babel/proposal-class-properties", { "loose": true }],
+    [
+      "@babel/transform-runtime",
+      {
+        "helpers": false,
+        "regenerator": true
+      }
+    ],
+    "babel-plugin-transform-es2015-modules-commonjs"
+  ]
+}

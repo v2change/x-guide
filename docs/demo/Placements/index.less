@@ -1,0 +1,33 @@
+:root {
+  --margin-x-direction: 18%;
+  --margin-y: 180px;
+}
+
+.topRow {
+  margin-top: var(--margin-y);
+  text-align: center;
+}
+
+.bottomRow {
+  text-align: center;
+  clear: both;
+  margin-bottom: var(--margin-y);
+}
+
+.flexBase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftCol:extend(.flexBase) {
+  width: 100px;
+  float: left;
+  margin-left: var(--margin-x-direction);
+}
+
+.rightCol:extend(.flexBase) {
+  width: 100px;
+  float: right;
+  margin-right: var(--margin-x-direction);
+}
